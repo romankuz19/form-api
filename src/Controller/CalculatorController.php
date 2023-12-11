@@ -6,6 +6,8 @@ use App\DTO\CalculateDto;
 use App\Requests\CalculateRequest;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Test\Constraint\ResponseIsSuccessful;
 use Symfony\Component\Routing\Annotation\Route;
 
 class CalculatorController extends AbstractController
@@ -49,14 +51,18 @@ class CalculatorController extends AbstractController
 
         } catch (\Throwable $exception) {
             return $this->json([
-                "error" => $exception->getMessage(),
-                "code" => $exception->getCode(),
+                'status' => Response::HTTP_INTERNAL_SERVER_ERROR,
+                'result' => [
+                    'error' => $exception->getMessage(),
+                    'code' => $exception->getCode()
+                ],
             ]);
         }
 
-        return $this->json(
-            ['finalCost' => $calculateDto->getFinalCost()]
-        );
+        return $this->json([
+                'status' => Response::HTTP_OK,
+                'result' => ['finalCost' => $calculateDto->getFinalCost()]
+        ]);
 
     }
 
