@@ -55,7 +55,7 @@ class CalculatorController extends AbstractController
         }
 
         return $this->json(
-            ['final_cost' => $calculateDto->getFinalCost()]
+            ['finalCost' => $calculateDto->getFinalCost()]
         );
 
     }
