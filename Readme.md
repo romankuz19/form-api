@@ -4,3 +4,13 @@
 Реализовано:
 1. Валидация
 2. Обработка логики расчета суммы оплаты
+
+Пример работы:
+![image](https://github.com/romankuz19/form-api/assets/80103795/8050d7df-0ebd-4171-9918-a38bc87cdd78)
+![image](https://github.com/romankuz19/form-api/assets/80103795/89e2e40c-92ea-428a-80c3-14cee4a9dee9)
+![image](https://github.com/romankuz19/form-api/assets/80103795/7d45738f-d7f8-41a4-9a40-94cd19ae2ac8)
+![image](https://github.com/romankuz19/form-api/assets/80103795/65674c60-bef0-4eff-acbf-081dd3735493)
+![image](https://github.com/romankuz19/form-api/assets/80103795/560a0188-4d99-4215-b643-f84a42eec86b)
+
+
+
