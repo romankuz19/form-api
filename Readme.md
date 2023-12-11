@@ -1,5 +1,5 @@
 # Небольшое апи для формы
-![image](https://github.com/romankuz19/form-api/assets/80103795/7f057e49-b3df-4975-8a12-3b51d7d4f6ca)
+1. <img alt="image" height="400" src="https://github.com/romankuz19/form-api/assets/80103795/7f057e49-b3df-4975-8a12-3b51d7d4f6ca" width="400"/>
 
 Реализовано:
 1. Валидация
